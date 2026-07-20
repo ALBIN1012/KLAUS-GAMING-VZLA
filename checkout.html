@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout y Verificación - Klaus Gaming Vzla</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="icon" href="imagenes/favicon2.png" type="image/png">
     <style>
         /* Estilos exclusivos para el nuevo checkout profesional */
         .checkout-grid {
@@ -69,21 +69,23 @@
 
 <body>
 
-     <header class="header-top" id="inicio">
-       <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="imagenes/favicon2.png" alt="Mando Gamer Neón" class="mando-banner">
+    <!-- CABECERA PARA PRODUCTO, CARRITO Y CHECKOUT -->
+    <header class="header-top">
+        <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+            
+            <!-- LOGO (Al hacerle clic te devuelve al index) -->
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="imagenes/favicon2.png" alt="Mando Gamer Neón" class="mando-banner" style="height: 28px; margin-right: 8px;">
                 KLAUS <span class="neon-text">GAMING</span> <span class="tag-vzla">VZLA</span>
             </a>
             
+            <!-- CARRITO -->
             <div style="display: flex; gap: 10px; align-items: center;">
-                <!-- NUEVO BOTÓN DE CARRITO CON CONTADOR NEÓN -->
-                <a href="carrito.html" class="search-btn" style="text-decoration: none; background: #111827; border: 1px solid var(--neon-green); color: #fff;">
+                <a href="carrito.html" class="search-btn" style="text-decoration: none; background: #111827; border: 1px solid var(--neon-green); color: #fff; padding: 6px 14px; border-radius: 8px;">
                     🛒 <span style="color: var(--neon-green); font-weight: 900;" class="cart-counter-badge">0</span>
                 </a>
-                
-                <a href="index.html" class="search-btn" style="text-decoration: none;">⬅ Volver</a>
             </div>
+
         </div>
     </header>
     <main class="main-container" style="margin-top: 3rem; margin-bottom: 5rem; max-width: 1350px; width: 94%;">

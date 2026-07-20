@@ -6,24 +6,27 @@
     <title>Detalle del Producto - Klaus Gaming Vzla</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon del control LED con truco anti-caché -->
-    <link rel="icon" href="imagenes/favicon2.png" type="image/jpeg">
+    <link rel="icon" href="imagenes/favicon2.png" type="image/png">
 </head>
 <body>
 
-    <!-- CABECERA GENERAL -->
+    <!-- CABECERA PARA PRODUCTO, CARRITO Y CHECKOUT -->
     <header class="header-top">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
+        <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+            
+            <!-- LOGO (Al hacerle clic te devuelve al index) -->
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
                 <img src="imagenes/favicon2.png" alt="Mando Gamer Neón" class="mando-banner" style="height: 28px; margin-right: 8px;">
                 KLAUS <span class="neon-text">GAMING</span> <span class="tag-vzla">VZLA</span>
             </a>
             
+            <!-- CARRITO -->
             <div style="display: flex; gap: 10px; align-items: center;">
-                <a href="carrito.html" class="search-btn" style="text-decoration: none; background: #111827; border: 1px solid var(--neon-green); color: #fff;">
+                <a href="carrito.html" class="search-btn" style="text-decoration: none; background: #111827; border: 1px solid var(--neon-green); color: #fff; padding: 6px 14px; border-radius: 8px;">
                     🛒 <span style="color: var(--neon-green); font-weight: 900;" class="cart-counter-badge">0</span>
                 </a>
-                <a href="index.html" class="search-btn" style="text-decoration: none;">⬅ Volver al Catálogo</a>
             </div>
+
         </div>
     </header>
 

@@ -15,19 +15,28 @@
 </head>
 <body>
 
-    <header class="header-top" id="inicio">
-       <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="imagenes/favicon2.png" alt="Mando Gamer Neón" class="mando-banner">
+    <!-- CABECERA PARA INDEX.HTML -->
+    <header class="header-top">
+        <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+            
+            <!-- LOGO -->
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="imagenes/favicon2.png" alt="Mando Gamer Neón" class="mando-banner" style="height: 28px; margin-right: 8px;">
                 KLAUS <span class="neon-text">GAMING</span> <span class="tag-vzla">VZLA</span>
             </a>
             
+            <!-- 🔍 MOTOR DE BÚSQUEDA -->
+            <div style="flex: 1; max-width: 350px; min-width: 200px; position: relative;">
+                <input type="text" id="input-buscador" placeholder="🔍 Buscar juego (Ej: Spider-Man)..." style="width: 100%; padding: 8px 12px; background: #111827; border: 1px solid var(--border-color); border-radius: 8px; color: #fff; font-size: 0.9rem; outline: none;" onkeyup="filtrarJuegos(event)">
+            </div>
+
+            <!-- CARRITO -->
             <div style="display: flex; gap: 10px; align-items: center;">
-                <!-- NUEVO BOTÓN DE CARRITO CON CONTADOR NEÓN -->
-                <a href="carrito.html" class="search-btn" style="text-decoration: none; background: #111827; border: 1px solid var(--neon-green); color: #fff;">
+                <a href="carrito.html" class="search-btn" style="text-decoration: none; background: #111827; border: 1px solid var(--neon-green); color: #fff; padding: 6px 14px; border-radius: 8px;">
                     🛒 <span style="color: var(--neon-green); font-weight: 900;" class="cart-counter-badge">0</span>
                 </a>
             </div>
+
         </div>
     </header>
 
